@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .pink{
+        width: 300px;
+        height: 300px;
+        background-color: pink;
+    }
+    .beige{
+        width: 300px;
+        height: 300px;
+        background-color: beige;
+    }
+    .blue{
+        width: 300px;
+        height: 300px;
+        background-color: rgb(0, 195, 255);
+    }
+    body {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    @media only screen and (max-width: 600px){
+        body{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+        
+
+</style>
+<body>
+    <div class="pink"></div>
+    <div class="beige"></div>
+    <div class="blue"></div>
+</body>
+</html>
