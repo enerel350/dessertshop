@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <style>
+    .container div {
+        background-color: pink;
+        width: 100px;
+        height: 100px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        gap: 20px;
+    }
+    @media only screen and (max-width: 900px ){
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+    }
+    @media only screen and (max-width: 600px ){
+        .container{
+            display: grid;
+            grid-template-columns: auto auto ;
+        }
+    }
+    @media only screen and (max-width: 300px ){
+        .container{
+            display: grid;
+            grid-template-columns: auto;
+        }
+    }
+
+ </style>
+ <body>
+    <div class="container"> 
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+ </body>
+ </html>
